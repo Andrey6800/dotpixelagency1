@@ -7,7 +7,7 @@
     --menu-item-bg: #6A67CE;
     --button-bg: #0800ff;
     --content-bg: #1ecf0a;
-    --sidebar-right-bg: #f5f5f5;
+    --sidebar-right-bg: #dadada;
     --text-color: #ffffff;
     --text-dark: #333333;
 }
@@ -43,7 +43,7 @@ header {
     transform: translate(-50%, -50%);
     height: 40px;
     width: 40px;
-    border-radius: 8px;
+
 }
 
 .searchBar-container {
@@ -54,7 +54,6 @@ header {
     transform: translate(-50%, -50%);
     height: 40px;
     width: 400px;
-    border-radius: 20px;
 }
 
 .rightside-container {
@@ -65,17 +64,15 @@ header {
     transform: translate(-50%, -50%);
     height: 40px;
     width: 300px;
-    border-radius: 20px;
 }
 
 /* MAIN CONTAINER - 3 COLUMNS */
 .main-container {
     display: flex;
-    margin-top: 60px;
-    min-height: calc(100vh - 60px);
     flex: 1;
     gap: 30px;
-    margin: 60px 30px 0px 30px;
+    margin: 4% 3% 0% 3% ;
+    background: #333333;
 }
 
 /* LEFT SIDEBAR - MENU */
