@@ -1,6 +1,6 @@
 
 :root {
-    --header-bg: rgb(255, 0, 0);
+    --header-bg: #EBDEE6;
     --logo-bg: rgb(0, 255, 106);
     --menu-bg: rgb(246, 248, 99);
     --menu-container-bg: rgb(155, 157, 7);
@@ -28,7 +28,7 @@ body {
 /* HEADER */
 header {
     background: var(--header-bg);
-    height: 60px;
+    height: 11%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -36,13 +36,12 @@ header {
 }
 
 .logo-container {
-    background: var(--logo-bg);
     position: absolute;
     top: 50%;
-    left: 8%;
+    left: 7%;
     transform: translate(-50%, -50%);
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: 4%;
 
 }
 
@@ -50,52 +49,54 @@ header {
     background: var(--logo-bg);
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 43%;
     transform: translate(-50%, -50%);
-    height: 40px;
-    width: 400px;
+    height: 55%;
+    width: 40%;
 }
 
 .rightside-container {
     background: var(--logo-bg);
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 86%;
     transform: translate(-50%, -50%);
-    height: 40px;
-    width: 300px;
+    height: 55%;
+    width: 20%;
 }
 
-/* MAIN CONTAINER - 3 COLUMNS */
+
+
+
+/* MAIN FLEX CONTAINER - 3 COLUMNS */
 .main-container {
     display: flex;
     flex: 1;
-    gap: 30px;
-    margin: 4% 3% 0% 3% ;
+    gap: 10%;
+    margin: 5.45% 4% 0% 0% ;
     background: #333333;
 }
 
 /* LEFT SIDEBAR - MENU */
 .sidebar-left {
-    width: 200px;
+    width: 15%;
     background: var(--menu-bg);
     display: flex;
     flex-direction: column;
-    padding: 20px 10px;
+    padding: 3.5% 1%;
 }
 
 .menu-flex-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6.5%;
     flex: 1;
 }
 
 .menu-item {
     background-color: var(--menu-item-bg);
     color: var(--text-color);
-    padding: 12px;
-    border-radius: 6px;
+    padding: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +124,7 @@ header {
     background: var(--content-bg);
     padding: 30px;
     overflow-y: auto;
-
+    height: 1500px;
 }
 
 .content h1 {
@@ -140,9 +141,9 @@ header {
 
 /* RIGHT SIDEBAR */
 .sidebar-right {
-    width: 250px;
+    width: 21.5%;
     background: var(--sidebar-right-bg);
-    padding: 20px;
+    padding: 30px;
 }
 
 .widget {
