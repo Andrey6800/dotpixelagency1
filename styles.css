@@ -107,6 +107,7 @@ header {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
+    border: none;
 }
 
 .searchBar-Setting-btn:hover{
@@ -177,6 +178,7 @@ header {
     cursor: pointer;
     border-radius: 50%;
     border: none;
+    background-color: #fbfbfb;
 }
 
 .notification-btn:hover {
@@ -232,7 +234,7 @@ header {
     background-color: #F9D44A;
 }
 .menu-item {
-    border-radius: 5%;
+    border-radius: 10px;
     color: var(--text-dark);
     padding: 8%;
     display: flex;
@@ -291,7 +293,7 @@ header {
 .selected-trip-container {
     width: 100%;
     height: 55%;
-    background: rgb(56, 177, 19);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,7 +304,6 @@ header {
     display: flex;
     width: 100%;
     height: 53%;
-    background-color: rgb(42, 140, 165);
     align-items: center;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -314,13 +315,12 @@ header {
 
 .small-imgs-container {
     height: 24%;
-    width: 80%;
     border-radius: 10px;
     margin-bottom: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
     background: rgba(255, 255, 255, 0.2); /* Прозрачный белый */
     backdrop-filter: blur(10px); /* Размытие фона */
 
@@ -328,6 +328,11 @@ header {
 
 .small-imgs-container-item {
     margin: 5px;
+    cursor: pointer;
+}
+
+.small-imgs-container-item:hover {
+    transform: scale(1.1);
 }
 
 
@@ -344,13 +349,96 @@ header {
     display: flex;
     width: 100%;
     height: 40%;
-    background-color: brown;
+
+    justify-content: space-around;
+}
+
+.info-container h2{
+    font-family: Baloo 2;
+    font-weight: 600;
+    font-style: Medium;
+    margin: 1.5rem 0 0.5rem 0;
+    color: var(--text-dark);
+}
+
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info-container-header {
+    
+}
+
+.info-container-header h3 {
+    color: var(--text-dark);
+    font-size: 24px;
+    display: flex;
+
+    align-items: center;
+}
+
+.separator {
+    display: flex;
+    width: 45%;
 }
 
 
 
+.info-container-header p{
+    color: #9b9b9b;
+    font-size: 13px;
 
+}
 
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-dark);
+
+    
+}
+
+.price-info {
+
+    display: flex;
+    flex-direction: column;
+}
+.muted {
+    font-size: 13px;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.price {
+    align-self: flex-start;
+    font-size: 30px;
+    font-weight: 1000;
+    margin: 0;
+    line-height: 1;
+}
+
+.book-travel-btn {
+    background-color: var(--text-dark);
+    color: var(--text-color);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: Baloo 2;
+    font-style: Medium;
+    padding: 0.9rem 1.6rem;
+    align-self: flex-end;
+
+}
+
+.book-travel-btn:hover {
+    transform: scale(1.1);
+    background-color: #167397;
+}
 
 .trips-container {
     width: 100%;
