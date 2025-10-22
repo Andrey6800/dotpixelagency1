@@ -78,7 +78,7 @@ header {
     width: 10%;
     cursor: pointer;
     background: #E9F1FA;
-    border-radius: 50% 0% 0% 50%;
+    border-radius: 30px 0px 0px 30px;
     transition: background 0.3s ease;
 }
 
@@ -94,6 +94,8 @@ header {
     font-size: 16px;
     background-color: #E9F1FA;
     color: #0d0c22;
+    border-radius: 0px 30px 30px 0px;
+
 }
 
 .searchBar-Setting-btn{
@@ -128,7 +130,7 @@ header {
 .rightside-leftContainer {  /*Местоположение пользователя*/
     font-size: 11px;
     height: 100%;
-    width: 35%;  
+    width: 46%;  
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -212,6 +214,7 @@ header {
     font-weight: 600;
     font-style: Medium;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .menu-flex-container {
@@ -219,7 +222,7 @@ header {
     flex-direction: column;
     gap: 5%;
     height: 100%;
-    
+
 }
 
 .Current-page {
@@ -229,7 +232,7 @@ header {
     background-color: #F9D44A;
 }
 .menu-item {
-    border-radius: ;
+    border-radius: 5%;
     color: var(--text-dark);
     padding: 8%;
     display: flex;
@@ -258,7 +261,7 @@ header {
     flex: 1;
     background: var(--content-bg);
     padding: 0px;
-    height: 930px;
+    height: 830px;
     margin-left: 15.6%;
 }
 
@@ -277,7 +280,7 @@ header {
 /* RIGHT SIDEBAR CONTAINER*/
 .sidebar-right {
     width: 25%;
-    height: 930px;
+    height: 730px;
 
     display: flex;
     justify-content: space-between;
@@ -290,7 +293,64 @@ header {
     height: 55%;
     background: rgb(56, 177, 19);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
 }
+
+.img-container {
+    display: flex;
+    width: 100%;
+    height: 53%;
+    background-color: rgb(42, 140, 165);
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-image: url('imgs/Brazil-forest.png');
+    background-size: 93%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.small-imgs-container {
+    height: 24%;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2); /* Прозрачный белый */
+    backdrop-filter: blur(10px); /* Размытие фона */
+
+}
+
+.small-imgs-container-item {
+    margin: 5px;
+}
+
+
+.heart-button {
+    margin: 3% 3% 0% 70%;
+    cursor: pointer;
+}
+
+.heart-button:hover {
+    transform: scale(1.1);
+}
+
+.info-container {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    background-color: brown;
+}
+
+
+
+
+
 
 .trips-container {
     width: 100%;
