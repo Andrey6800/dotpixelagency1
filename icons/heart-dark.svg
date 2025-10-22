@@ -1,3 +1,7 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.44 3.10001C14.63 3.10001 13.01 3.98001 12 5.33001C10.99 3.98001 9.37 3.10001 7.56 3.10001C4.49 3.10001 2 5.60001 2 8.69001C2 9.88001 2.19 10.98 2.52 12C4.1 17 8.97 19.99 11.38 20.81C11.72 20.93 12.28 20.93 12.62 20.81C15.03 19.99 19.9 17 21.48 12C21.81 10.98 22 9.88001 22 8.69001C22 5.60001 19.51 3.10001 16.44 3.10001Z" fill="#18333E"/>
+<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-4" y="-4" width="61" height="61"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_136_50_clip_path);height:100%;width:100%"></div></foreignObject><circle data-figma-bg-blur-radius="4" cx="26.5" cy="26.5" r="26.5" fill="#E9F1FA"/>
+<path d="M30.44 18.1C28.63 18.1 27.01 18.98 26 20.33C24.99 18.98 23.37 18.1 21.56 18.1C18.49 18.1 16 20.6 16 23.69C16 24.88 16.19 25.98 16.52 27C18.1 32 22.97 34.99 25.38 35.81C25.72 35.93 26.28 35.93 26.62 35.81C29.03 34.99 33.9 32 35.48 27C35.81 25.98 36 24.88 36 23.69C36 20.6 33.51 18.1 30.44 18.1Z" fill="#18333E"/>
+<defs>
+<clipPath id="bgblur_0_136_50_clip_path" transform="translate(4 4)"><circle cx="26.5" cy="26.5" r="26.5"/>
+</clipPath></defs>
 </svg>

@@ -105,17 +105,20 @@ header {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-    
+}
+
+.searchBar-Setting-btn:hover{
+    transform: scale(1.05);
 }
 
 .rightside-container {
 
     position: absolute;
     top: 50%;
-    left: 85%;
+    left: 84.8%;
     transform: translate(-50%, -50%);
     height: 55%;
-    width: 19%;
+    width: 24%;
     display: flex;
     justify-content: space-between;
     border-left: 2px solid #6e6e6e59; 
@@ -130,6 +133,8 @@ header {
     align-items: center;
     display: flex;
     margin-left: 20px;
+    cursor: pointer;
+
 }
 
 .rightside-leftContainer img {
@@ -137,8 +142,15 @@ header {
 
 }
 
+.rightside-leftContainer:hover{
+    transform: scale(1.1);
+}
+
 .rightside-leftContainer p {
-    font-size: 15px;
+    font-family: Baloo 2;
+    font-weight: 600;
+    font-style: Medium;
+    font-size: 17px;
     margin: 10px;
     white-space: nowrap; /* Текст в одну строку */
     color: var(--text-dark);
@@ -148,7 +160,7 @@ header {
 
 .rightside-rightContainer {
     height: 100%;
-    width: 40%;
+    width: 32%;
 
     display: flex;
     align-items: center;
@@ -159,10 +171,14 @@ header {
 
 .notification-btn {
     display: flex;
-    width: 45%;
+    width: 40%;
     cursor: pointer;
     border-radius: 50%;
     border: none;
+}
+
+.notification-btn:hover {
+    transform: scale(1.1);
 }
 
 
@@ -178,9 +194,8 @@ header {
 /* ОСНОВНОЙ КОНТЕЙНЕР С ТРЕМЯ СТОБЦАМИ */
 .main-container {
     display: flex;
-    flex: 1;
-    gap: 10%;
-    margin: 6.6% 4% 0% 0% ;
+    gap: 4%;
+    margin: 6.6% 3% 0% 0% ;
 
 }
 
@@ -193,24 +208,18 @@ header {
     position: fixed;
     flex-direction: column;
     padding: 0% 3%;
-    
-
-
-
     font-family: Baloo 2;
-    font-weight: 550;
+    font-weight: 600;
     font-style: Medium;
     font-size: 16px;
-
 }
 
 .menu-flex-container {
     display: flex;
     flex-direction: column;
     gap: 5%;
-    flex: 1;
     height: 100%;
-
+    
 }
 
 .Current-page {
@@ -220,9 +229,9 @@ header {
     background-color: #F9D44A;
 }
 .menu-item {
-
+    border-radius: ;
     color: var(--text-dark);
-    padding: 14px;
+    padding: 8%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -234,7 +243,7 @@ header {
 }
 
 .menu-item:hover {
-
+    background: rgba(255, 217, 0, 0.74);
     transform: translateY(-2px);
 }
 
@@ -249,8 +258,7 @@ header {
     flex: 1;
     background: var(--content-bg);
     padding: 0px;
-    overflow-y: auto;
-    height: 1500px;
+    height: 930px;
     margin-left: 15.6%;
 }
 
@@ -268,20 +276,59 @@ header {
 
 /* RIGHT SIDEBAR CONTAINER*/
 .sidebar-right {
-    width: 21.5%;
-    background: var(--sidebar-right-bg);
-    padding: 30px;
+    width: 25%;
+    height: 930px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
-.widget {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.selected-trip-container {
+    width: 100%;
+    height: 55%;
+    background: rgb(56, 177, 19);
+    display: flex;
 }
 
-.widget h3 {
+.trips-container {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trips-container-item {
+    width: 100%;
+    height: 28%;
+    flex-direction: row;
+    display: flex;
+    
+}
+
+
+.location-name {
+    font-family: Baloo 2;
+    font-weight: bold;
+    font-style: Medium;
+    font-size: 22px;
+    margin: 4% 0% 0% 2%;
     color: var(--text-dark);
-    margin-bottom: 10px;
+}
+
+.location-country {
+    font-size: 17px;
+    color: #9b9b9b;
+}
+
+.heart-btn {
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 6%;
+}
+
+.heart-btn:hover {
+    transform: scale(1.1);
 }
