@@ -1,4 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('fonts/Baloo2-Regular.woff2') format('woff2'),
+         url('fonts/Baloo2-Regular.woff') format('woff'),
+         url('fonts/Baloo2-Regular.ttf') format('truetype');
+    font-weight: 100; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('fonts/Baloo2-Medium.woff2') format('woff2'),
+         url('fonts/Baloo2-Medium.woff') format('woff'),
+         url('fonts/Baloo2-Medium.ttf') format('truetype');
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Baloo 2';
+    src: url('fonts/Baloo2-SemiBold.woff2') format('woff2'),
+         url('fonts/Baloo2-SemiBold.woff') format('woff'),
+         url('fonts/Baloo2-SemiBold.ttf') format('truetype');
+    font-weight: 700; 
+    font-style: normal;
+    font-display: swap;
+}
 
 
 :root {
@@ -90,7 +121,6 @@ header {
     border: 2px solid transparent;
     font-family: Baloo 2;
     font-weight: 300;
-    font-style: Medium;
     font-size: 16px;
     background-color: #E9F1FA;
     color: #0d0c22;
@@ -128,7 +158,7 @@ header {
 
 }
 
-.rightside-leftContainer {  /*Местоположение пользователя*/
+.rightside-leftContainer {  
     font-size: 11px;
     height: 100%;
     width: 46%;  
@@ -137,7 +167,7 @@ header {
     display: flex;
     margin-left: 20px;
     cursor: pointer;
-
+    overflow: hidden;
 }
 
 .rightside-leftContainer img {
@@ -152,7 +182,6 @@ header {
 .rightside-leftContainer p {
     font-family: Baloo 2;
     font-weight: 600;
-    font-style: Medium;
     font-size: 17px;
     margin: 10px;
     white-space: nowrap; /* Текст в одну строку */
@@ -213,8 +242,8 @@ header {
     flex-direction: column;
     padding: 0% 3%;
     font-family: Baloo 2;
-    font-weight: 600;
-    font-style: Medium;
+    font-weight: 400;
+
     font-size: 16px;
     overflow: hidden;
 }
@@ -222,15 +251,14 @@ header {
 .menu-flex-container {
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 3.5%;
     height: 100%;
 
 }
 
 .Current-page {
 
-    width: 100%;
-    height: 200%;
+
     background-color: #F9D44A;
 }
 .menu-item {
@@ -241,9 +269,10 @@ header {
     align-items: center;
     justify-content: flex-start;
     cursor: pointer;
+    width: 120%;
 }
 
-.menu-item img {
+.menu-item img { 
     margin-right: 10px;
 }
 
@@ -259,12 +288,234 @@ header {
 
 
 /* MAIN CONTENT CONTAINER*/
-.content {
+.main-middle-container {
+    display: flex;
     flex: 1;
-    background: var(--content-bg);
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0px;
-    height: 830px;
-    margin-left: 15.6%;
+    height: 730px;
+    margin-left: 17.6%;
+}
+
+.discover-world-container {
+    flex-direction: column;
+    display: flex;
+
+    height: 10.5%;
+    justify-content: space-between;
+}
+
+.discover-world-container h2{
+    font-family: Baloo 2;
+    color: var(--text-dark);
+}
+
+.recommended-places-trips-container {
+    display: flex;
+    width: 44%;
+    font-family: Baloo 2;
+    color: var(--text-dark);
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.recommended-places-trips-container p {
+    color: #9b9b9b;
+    margin: 0% 3% 0% 0%;
+    cursor: pointer;
+}
+
+.recommended-places-trips-container p:hover {
+    border-bottom: 1px solid gray;
+}
+.main-trips-container {
+    justify-content: space-between;
+    display: flex;
+    height: 43%;
+    gap: 3.5%;
+}
+
+.main-trips-container-item {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-trips-container-item h3 {
+    align-self: flex-start;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.text-wrapper {
+    display: flex;
+    align-self: flex-start;
+    gap: 1%;
+    width: 70%;
+    height: 7%;
+    color: var(--text-dark);
+
+}
+
+
+
+.date-choice-wrapper {
+    display: flex;
+    width: 100%;
+    height: 55%;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    gap: 5%;
+}
+
+
+.current-date-wrapper {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-dark)
+    
+}
+
+.current-date {
+
+    display: flex;
+    height: 60%;
+    width: 25%;
+    border-radius: 30px;
+    border: 1.5px solid #dadada;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dates-to-choose {
+    display: flex;
+    height: 65%;
+    align-items: center;
+    justify-content: space-between;
+}
+.date-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.week-day {
+    display: flex;
+    font-weight: 100;
+    color: #9b9b9b;
+    font-size: 16px;
+
+}
+
+.month-date {
+    display: flex;
+    font-weight: 400;
+    color: var(--text-dark);
+    font-size: 23px;
+}
+
+.current-date-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--text-dark);
+    font-weight: 400;
+    width: 8%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.yellow-thing {
+    display: flex;
+    background-color: yellow;
+    height: 7%;
+    width: 9%;
+    border-radius: 5px;
+}
+
+.current-month-date {
+    display: flex;
+    font-weight: 100;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+
+
+.main-middle-container-footer {
+    flex-direction: column;
+    display: flex;
+    height: 40%;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+
+
+.current-date-tours-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 35%;
+    gap: 5%;
+    margin-bottom: 10px;
+}
+
+.selected-tour {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: var(--text-dark);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.selected-tour-img {
+    display: flex;
+    width: 25%;
+    margin: 20px;
+}
+
+
+.selecred-tour-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+
+}
+.text-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    color: var(--text-color);
+}
+
+.pause-btn-block {
+    display: flex;
+    height: 100%;
+    width: 10%;
+    background-color: #F9D44A;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
 }
 
 .content h1 {
@@ -311,6 +562,7 @@ header {
     background-size: 93%;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .small-imgs-container {
@@ -320,10 +572,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    background: rgba(255, 255, 255, 0.2); /* Прозрачный белый */
-    backdrop-filter: blur(10px); /* Размытие фона */
-
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    
 }
 
 .small-imgs-container-item {
@@ -353,14 +604,6 @@ header {
     justify-content: space-around;
 }
 
-.info-container h2{
-    font-family: Baloo 2;
-    font-weight: 600;
-    font-style: Medium;
-    margin: 1.5rem 0 0.5rem 0;
-    color: var(--text-dark);
-}
-
 
 .info-container {
     display: flex;
@@ -368,17 +611,16 @@ header {
 
 }
 
-.info-container-header {
-    
-}
+
 
 .info-container-header h3 {
     color: var(--text-dark);
     font-size: 24px;
     display: flex;
-
     align-items: center;
-}
+    font-family: Baloo 2;
+    font-weight: 600;
+    }
 
 .separator {
     display: flex;
@@ -399,7 +641,6 @@ header {
     align-items: center;
     color: var(--text-dark);
 
-    
 }
 
 .price-info {
@@ -416,7 +657,7 @@ header {
 .price {
     align-self: flex-start;
     font-size: 30px;
-    font-weight: 1000;
+    font-weight: 400;
     margin: 0;
     line-height: 1;
 }
@@ -429,10 +670,10 @@ header {
     cursor: pointer;
     font-weight: 600;
     font-family: Baloo 2;
-    font-style: Medium;
+
     padding: 0.9rem 1.6rem;
     align-self: flex-end;
-
+    transition: all 400ms ease;
 }
 
 .book-travel-btn:hover {
@@ -446,6 +687,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .trips-container-item {
@@ -453,14 +695,13 @@ header {
     height: 28%;
     flex-direction: row;
     display: flex;
-    
+    overflow: hidden;
 }
 
 
 .location-name {
     font-family: Baloo 2;
-    font-weight: bold;
-    font-style: Medium;
+    font-weight: 400;
     font-size: 22px;
     margin: 4% 0% 0% 2%;
     color: var(--text-dark);
@@ -468,6 +709,7 @@ header {
 
 .location-country {
     font-size: 17px;
+    font-weight: 100;
     color: #9b9b9b;
 }
 
